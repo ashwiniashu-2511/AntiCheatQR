@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Station 2 - QR Code</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f2f2;
+            padding-top: 40px;
+        }
+
+        .box {
+            background: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #aaa;
+        }
+
+        .qr {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>📍 STATION 2</h1>
+
+    <h2>Scan QR Code 2</h2>
+
+    <p>Participants who completed Question 1 can scan this QR.</p>
+
+    <img
+        class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=http://10.226.90.9:8080/AntiCheatQR/Question2Servlet"
+        alt="QR Code 2">
+
+    <h3>🔐 QR Code 2</h3>
+
+</div>
+
+</body>
+</html>

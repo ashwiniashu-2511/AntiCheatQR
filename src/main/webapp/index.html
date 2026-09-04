@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anti-Cheat QR Event</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .box {
+            background: white;
+            width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #aaa;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>🎯 Anti-Cheat QR Event</h1>
+
+    <h2>Question 1</h2>
+
+    <p>What is the capital of Tamil Nadu?</p>
+
+    <input type="text" id="answer" placeholder="Enter your answer">
+
+    <br>
+
+    <button onclick="checkAnswer()">Submit Answer</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+
+function checkAnswer() {
+
+    let answer = document.getElementById("answer").value;
+
+    if (answer.toLowerCase().trim() === "chennai") {
+
+    document.getElementById("message").innerHTML =
+    "✅ Correct Answer!";
+
+    setTimeout(function() {
+
+        window.location.href = "qr2.html";
+
+    }, 1000);
+
+} else {
+
+        document.getElementById("message").innerHTML =
+        "❌ Wrong Answer. Try Again!";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

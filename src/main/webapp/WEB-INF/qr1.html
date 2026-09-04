@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question 1 QR</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #f2f2f2;
+            padding-top: 50px;
+        }
+
+        .box {
+            background: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #aaa;
+        }
+
+        .qr {
+            width: 350px;
+            height: 350px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>📍 STATION 1</h1>
+
+    <h2>Question 1</h2>
+
+    <p>Scan this QR Code to start Question 1</p>
+
+    <img
+        class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=http://10.226.90.9:8080/AntiCheatQR/QuestionServlet"
+        alt="Question 1 QR">
+
+    <h3>🔐 QR CODE 1</h3>
+
+</div>
+
+</body>
+</html>

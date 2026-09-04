@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+</head>
+
+<body>
+
+    <h1>🔐 Anti-Cheat QR Event</h1>
+
+    <h2>Question 2</h2>
+
+    <p>Which language is mainly used for Android development?</p>
+
+    <input type="text" id="answer" placeholder="Enter your answer">
+
+    <button onclick="checkAnswer()">Submit Answer</button>
+
+    <p id="message"></p>
+
+    <script>
+
+        function checkAnswer() {
+
+            let answer = document.getElementById("answer").value;
+
+            if (answer.toLowerCase().trim() === "java") {
+
+                document.getElementById("message").innerHTML =
+                "✅ Correct Answer!";
+
+            } else {
+
+                document.getElementById("message").innerHTML =
+                "❌ Wrong Answer. Try Again!";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
