@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding: 30px 15px;
+            margin: 0;
+        }
+
+        .box {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            margin: auto;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #aaa;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 27px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-size: 21px;
+        }
+
+        input {
+            width: 90%;
+            padding: 13px;
+            margin: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        button {
+            width: 90%;
+            padding: 13px;
+            margin-top: 15px;
+            font-size: 17px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .warning {
+            margin-top: 18px;
+            padding: 12px;
+            background: #fff3cd;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #664d03;
+        }
+
+        @media (max-width: 400px) {
+
+            body {
+                padding: 20px 10px;
+            }
+
+            .box {
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            input,
+            button {
+                width: 95%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>🎯 Anti-Cheat QR Event</h1>
+
+        <h2>Participant Registration</h2>
+
+        <form action="RegisterServlet" method="post">
+
+            <!-- Participant Name -->
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required>
+
+            <br>
+
+            <!-- Participant ID -->
+
+            <input
+                type="text"
+                name="participantId"
+                placeholder="Enter Participant ID"
+                required>
+
+            <br>
+
+            <!-- Access Code -->
+
+            <input
+                type="text"
+                name="accessCode"
+                placeholder="Create Access Code"
+                minlength="6"
+                maxlength="12"
+                required>
+
+            <div class="note">
+
+                🔐 Create a unique Access Code.
+                <br>
+
+                You will need this code for Q1, Q2 and Q3.
+
+            </div>
+
+            <div class="warning">
+
+                ⚠️ Remember your Access Code after registration.
+
+            </div>
+
+            <br>
+
+            <button type="submit">
+                Start Event
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

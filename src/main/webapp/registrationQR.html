@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Anti-Cheat QR Event - Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f2f2;
+            padding: 25px 15px;
+        }
+
+        .box {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #aaa;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .qr {
+            width: 320px;
+            max-width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .qr-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .instruction {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .step {
+            text-align: left;
+            max-width: 380px;
+            margin: 15px auto;
+        }
+
+        .step p {
+            margin: 8px 0;
+        }
+
+        .important {
+            background: #fff3cd;
+            padding: 12px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 400px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .box {
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .qr {
+                width: 280px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>🎯 ANTI-CHEAT QR EVENT</h1>
+
+        <h2>📍 ENTRY / REGISTRATION</h2>
+
+        <p>
+            Welcome to the Anti-Cheat QR Event!
+        </p>
+
+        <p>
+            Scan the QR code below using your mobile phone
+            to open the registration page.
+        </p>
+
+        <!-- Registration QR Code -->
+
+        <img
+            class="qr"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=https://anticheatqr.onrender.com/registration.html"
+            alt="Registration QR Code">
+
+        <div class="qr-title">
+            🔐 REGISTRATION QR
+        </div>
+
+        <div class="instruction">
+
+            <h3>📱 How to Register</h3>
+
+            <div class="step">
+
+                <p>1️⃣ Scan the QR code.</p>
+
+                <p>2️⃣ Enter your Participant Name.</p>
+
+                <p>3️⃣ Enter your Participant ID.</p>
+
+                <p>4️⃣ Create your unique Access Code.</p>
+
+                <p>5️⃣ Click <b>Register</b>.</p>
+
+                <p>
+                    6️⃣ After successful registration,
+                    remember your Access Code.
+                </p>
+
+                <p>
+                    7️⃣ Go to <b>Station 1</b> and scan
+                    <b>QR Code 1</b>.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="important">
+
+            ⚠️ <b>Important:</b>
+            <br><br>
+
+            Each Participant ID can be registered only once.
+            <br>
+
+            Keep your Access Code safe.
+            <br>
+
+            The same Access Code will be used for
+            <b>Q1, Q2 and Q3</b>.
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
