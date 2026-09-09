@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRYPTEX - Registration QR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .qr-page-title {
+            margin-top: 25px;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
+        }
+
+        .qr-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .qr-frame {
+            position: relative;
+            width: 350px;
+            max-width: 92%;
+            margin: 30px auto 20px;
+            padding: 22px;
+            background: #ffffff;
+            border: 3px solid var(--neon-cyan);
+            border-radius: 18px;
+            box-shadow:
+                0 0 15px rgba(0, 245, 212, 0.35),
+                0 0 35px rgba(124, 58, 237, 0.15);
+        }
+
+        .qr-frame::before,
+        .qr-frame::after {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            border-color: var(--electric-blue);
+            border-style: solid;
+        }
+
+        .qr-frame::before {
+            top: -6px;
+            left: -6px;
+            border-width: 4px 0 0 4px;
+            border-radius: 8px 0 0 0;
+        }
+
+        .qr-frame::after {
+            bottom: -6px;
+            right: -6px;
+            border-width: 0 4px 4px 0;
+            border-radius: 0 0 8px 0;
+        }
+
+        .qr-wrapper {
+            position: relative;
+            width: 300px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .qr {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .qr-center-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 58px;
+            height: 58px;
+
+            background: #ffffff;
+            border: 3px solid #000000;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: "Orbitron", sans-serif;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: #000000;
+
+            box-shadow: 0 0 0 4px #ffffff;
+
+            z-index: 5;
+        }
+
+        .qr-label {
+            margin-top: 20px;
+
+            font-family: "Orbitron", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+
+            color: var(--neon-cyan);
+            letter-spacing: 2px;
+        }
+
+        .scan-text {
+            margin-top: 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .instruction-box {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .instruction-title {
+            text-align: center;
+            color: var(--neon-cyan);
+            font-family: "Orbitron", sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            padding: 8px 0;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .important-box {
+            margin-top: 25px;
+            padding: 18px;
+
+            border: 1px solid rgba(251, 191, 36, 0.5);
+            border-radius: 12px;
+
+            background: rgba(251, 191, 36, 0.06);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .important-title {
+            color: var(--timer);
+            font-family: "Orbitron", sans-serif;
+            font-weight: 700;
+        }
+
+        .mission-quote {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .qr-page-title {
+                font-size: 1.45rem;
+            }
+
+            .qr-frame {
+                width: 330px;
+                padding: 18px;
+            }
+
+            .qr-wrapper {
+                width: 285px;
+            }
+
+            .qr-center-logo {
+                width: 52px;
+                height: 52px;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="watermark">CRYPTEX 2K26</div>
+
+    <main class="page">
+
+        <div class="cryptex-container">
+
+            <!-- EVENT BRANDING -->
+
+            <div class="event-brand">
+
+                <div class="event-name">
+                    CRYPTEX
+                </div>
+
+                <div class="event-title">
+                    INFOFEZ 2K26
+                </div>
+
+                <div class="college-name">
+                    A.V.V.M. Sri Pushpam College
+                </div>
+
+                <div class="tagline">
+                    Encrypt. Scan. Decrypt.
+                </div>
+
+                <div class="cyber-line"></div>
+
+            </div>
+
+
+            <!-- PAGE TITLE -->
+
+            <h1 class="qr-page-title">
+                REGISTRATION ACCESS
+            </h1>
+
+            <p class="qr-subtitle">
+                Scan the QR code below to enter the CRYPTEX mission.
+            </p>
+
+
+            <!-- QR CODE -->
+
+            <div class="qr-frame">
+
+                <div class="qr-wrapper">
+
+                    <img
+                        class="qr"
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=https%3A%2F%2Fanticheatqr.onrender.com%2Fregistration.html"
+                        alt="CRYPTEX Registration QR Code">
+
+                    <!-- CENTER CRYPTEX -->
+
+                    <div class="qr-center-logo">
+                        CRYPTEX
+                    </div>
+
+                </div>
+
+                <div class="qr-label">
+                    REGISTRATION QR
+                </div>
+
+                <div class="scan-text">
+                    Scan using your mobile phone
+                </div>
+
+            </div>
+
+
+            <!-- INSTRUCTIONS -->
+
+            <div class="question-box instruction-box">
+
+                <h2 class="instruction-title">
+                    HOW TO REGISTER
+                </h2>
+
+                <div class="step">
+                    01 — Scan the QR code.
+                </div>
+
+                <div class="step">
+                    02 — Enter your Participant Name.
+                </div>
+
+                <div class="step">
+                    03 — Enter your Participant ID.
+                </div>
+
+                <div class="step">
+                    04 — Create your unique Access Code.
+                </div>
+
+                <div class="step">
+                    05 — Click <b>Register</b>.
+                </div>
+
+                <div class="step">
+                    06 — Remember your Access Code after registration.
+                </div>
+
+                <div class="step">
+                    07 — Go to <b>Station 1</b> and scan
+                    <b>QR Code 1</b>.
+                </div>
+
+            </div>
+
+
+            <!-- IMPORTANT -->
+
+            <div class="important-box">
+
+                <div class="important-title">
+                    ⚠ IMPORTANT
+                </div>
+
+                <br>
+
+                Each Participant ID can be registered only once.
+
+                <br>
+
+                Keep your Access Code safe.
+
+                <br>
+
+                The same Access Code will be used for
+                <b>Q1, Q2, Q3, Q4 and Q5</b>.
+
+            </div>
+
+
+            <!-- MOTIVATION -->
+
+            <div class="motivation mission-quote">
+                “Think fast. Scan smart. Decode everything.”
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <div class="event-footer">
+                CRYPTEX 2K26 • INFOFEZ 2K26
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
