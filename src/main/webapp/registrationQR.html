@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRYPTEX - Registration QR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        .brand {
+            margin-bottom: 25px;
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 6px;
+            font-weight: 800;
+        }
+
+        .brand .event {
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
+
+        .brand .college {
+            margin-top: 8px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            margin-top: 12px;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 18px;
+            padding: 30px 20px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            margin: 0 0 25px;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .qr-frame {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .qr-frame img {
+            display: block;
+            width: 350px;
+            height: 350px;
+            max-width: 75vw;
+            max-height: 75vw;
+        }
+
+        .instructions {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .instruction {
+            display: flex;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .number {
+            font-weight: bold;
+            min-width: 28px;
+        }
+
+        .text {
+            color: #ddd;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .important {
+            margin-top: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .motivation {
+            margin-top: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 20px 10px;
+            }
+
+            .brand h1 {
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+
+            .brand .event {
+                font-size: 15px;
+            }
+
+            .card {
+                padding: 25px 15px;
+            }
+
+            .qr-frame img {
+                width: 280px;
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- CRYPTEX BRANDING -->
+        <div class="brand">
+
+            <h1>CRYPTEX</h1>
+
+            <div class="event">
+                INFOFEZ 2K26
+            </div>
+
+            <div class="college">
+                A.V.V.M. Sri Pushpam College
+            </div>
+
+            <div class="tagline">
+                Unveil--Reveal
+            </div>
+
+        </div>
+
+
+        <!-- REGISTRATION QR CARD -->
+        <div class="card">
+
+            <h2>REGISTRATION ACCESS</h2>
+
+            <p class="subtitle">
+                Scan the QR code below to access the CRYPTEX registration page.
+            </p>
+
+
+            <!-- QR CODE -->
+            <div class="qr-frame">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&amp;data=https%3A%2F%2Fanticheatqr.onrender.com%2Fregistration.html"
+                    alt="CRYPTEX Registration QR Code">
+
+            </div>
+
+
+            <!-- INSTRUCTIONS -->
+            <div class="instructions">
+
+                <div class="instruction">
+                    <div class="number">01</div>
+                    <div class="text">
+                        Scan the QR code using your mobile phone.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">02</div>
+                    <div class="text">
+                        Enter your Participant Name.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">03</div>
+                    <div class="text">
+                        Enter your Participant ID.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">04</div>
+                    <div class="text">
+                        Enter your College Name.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">05</div>
+                    <div class="text">
+                        Create your Access Code.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">06</div>
+                    <div class="text">
+                        Click the Register button.
+                    </div>
+                </div>
+
+                <div class="instruction">
+                    <div class="number">07</div>
+                    <div class="text">
+                        Remember your Access Code for the challenges.
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- IMPORTANT MESSAGE -->
+            <div class="important">
+
+                <strong>IMPORTANT</strong><br>
+
+                Keep your Participant ID and Access Code safe.
+                You will need them to participate in the CRYPTEX challenges.
+
+            </div>
+
+
+            <!-- MOTIVATION -->
+            <div class="motivation">
+                GET READY TO ENCRYPT. SCAN. DECRYPT.
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            CRYPTEX 2K26<br>
+            INFOFEZ 2K26<br>
+            A.V.V.M. Sri Pushpam College
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

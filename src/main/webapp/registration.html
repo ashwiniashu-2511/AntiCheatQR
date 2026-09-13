@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRYPTEX - INFOFEZ 2K26</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .registration-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .event-logo {
+            display: block;
+            width: 105px;
+            height: 105px;
+            object-fit: contain;
+            margin: 0 auto 12px auto;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.55));
+            animation: logoReveal 0.8s ease-out;
+        }
+
+        @keyframes logoReveal {
+            from {
+                opacity: 0;
+                transform: scale(0.75);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .registration-title {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 22px;
+            color: var(--text-main);
+        }
+
+        .registration-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .security-note {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 245, 212, 0.035);
+            border: 1px solid rgba(0, 245, 212, 0.18);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .security-note strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--neon-cyan);
+            font-size: 13px;
+        }
+
+        .security-note p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .warning {
+            margin-top: 15px;
+            padding: 13px;
+            background: rgba(251, 191, 36, 0.05);
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            border-radius: 10px;
+            text-align: center;
+            color: var(--timer);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .start-button {
+            margin-top: 22px;
+        }
+
+        .mission-quote {
+            margin-top: 22px;
+            text-align: center;
+        }
+
+        .mission-quote p {
+            font-size: 12px;
+            font-style: italic;
+            color: #CBD5E1;
+        }
+
+        @media (max-width: 600px) {
+            .event-logo {
+                width: 85px;
+                height: 85px;
+                margin-bottom: 10px;
+            }
+
+            .registration-title {
+                font-size: 19px;
+            }
+
+            .event-name {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CRYPTEX WATERMARK -->
+    <div class="watermark">
+        CRYPTEX 2K26
+    </div>
+
+    <main class="page">
+
+        <div class="cryptex-container registration-container">
+
+            <!-- EVENT BRANDING -->
+            <div class="event-brand">
+
+                <!-- INFOFEZ LOGO -->
+                <img src="image/infofez-logo.png"
+                     alt="INFOFEZ 2K26 Logo"
+                     class="event-logo">
+
+                <div class="event-name">
+                    CRYPTEX
+                </div>
+
+                <div class="event-title">
+                    INFOFEZ 2K26
+                </div>
+
+                <div class="college-name">
+                    A.V.V.M. Sri Pushpam College
+                </div>
+
+            </div>
+
+            <div class="tagline">
+                    Unveil--Reveal
+            </div>
+
+            <div class="cyber-line"></div>
+
+            <!-- REGISTRATION TITLE -->
+            <div class="registration-title">
+                PARTICIPANT REGISTRATION
+            </div>
+
+            <div class="registration-subtitle">
+                Enter your details to initialize your mission.
+            </div>
+
+            <!-- REGISTRATION FORM -->
+            <form action="RegisterServlet" method="post">
+
+                <!-- PARTICIPANT NAME -->
+                <div class="form-group">
+
+                    <label for="name">
+                        PARTICIPANT NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+                <!-- PARTICIPANT ID -->
+                <div class="form-group">
+
+                    <label for="participantId">
+                        PARTICIPANT ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="participantId"
+                        name="participantId"
+                        placeholder="Enter Participant ID"
+                        required>
+
+                </div>
+
+                <!-- COLLEGE NAME -->
+                <div class="form-group">
+
+                    <label for="collegeName">
+                        COLLEGE NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="collegeName"
+                        name="collegeName"
+                        placeholder="Enter your college name"
+                        required>
+
+                </div>
+
+                <!-- ACCESS CODE -->
+                <div class="form-group">
+
+                    <label for="accessCode">
+                        CREATE ACCESS CODE
+                    </label>
+
+                    <input
+                        type="text"
+                        id="accessCode"
+                        name="accessCode"
+                        placeholder="Create a unique access code"
+                        minlength="6"
+                        maxlength="12"
+                        required>
+
+                </div>
+
+                <!-- SECURITY NOTE -->
+                <div class="security-note">
+
+                    <strong>
+                        🔐 SECURE ACCESS CODE
+                    </strong>
+
+                    <p>
+                        Create a unique Access Code.
+                        <br>
+                        Keep it safe — you may need it during the mission.
+                    </p>
+
+                </div>
+
+                <!-- WARNING -->
+                <div class="warning">
+                    ⚠️ Remember your Access Code after registration.
+                </div>
+
+                <!-- START EVENT -->
+                <button
+                    type="submit"
+                    class="cyber-button start-button">
+                    START MISSION&nbsp; →
+                </button>
+
+            </form>
+
+            <!-- MOTIVATION -->
+            <div class="mission-quote">
+
+                <p>
+                    “Think fast. Scan smart. Decode everything.”
+                </p>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="event-footer">
+                CRYPTEX 2K26 &nbsp; • &nbsp; INFOFEZ 2K26
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
